@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Toluwani Akintoye</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+    <style>
+        :root { 
+            --bg: #0B1120; 
+            --text: #cbd5e1; 
+            --accent: #38bdf8; 
+            --nav-bg: rgba(30, 41, 59, 0.8);
+            --font-main: 'Inter', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; font-family: var(--font-main); }
+        
+        nav { 
+            background: var(--nav-bg); 
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 2rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #1e293b;
+        }
+        .logo { font-weight: 800; color: var(--accent); font-size: 1.3rem; }
+        .links a { margin-left: 20px; color: inherit; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .links a:hover, .links a.active { color: var(--accent); }
+
+        .container { max-width: 600px; margin: 0 auto; padding: 0 20px; text-align: center; flex: 1; }
+        
+        .breadcrumbs { padding: 30px 0; font-size: 0.9rem; color: #94a3b8; text-align: left; }
+        .breadcrumbs a { color: var(--accent); text-decoration: none; }
+        .breadcrumbs .separator { margin: 0 10px; color: #64748b; }
+        .breadcrumbs .current { color: #cbd5e1; opacity: 0.7; }
+
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 20px; margin-top: 50px; line-height: 1.1; }
+        
+        .btn { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: var(--accent); 
+            color: #0B1120; 
+            border-radius: 50px; 
+            margin-top: 20px; 
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+        .btn:hover { background-color: #fff; transform: translateY(-3px); box-shadow: 0 0 30px rgba(56, 189, 248, 0.6); }
+
+        .social-section { 
+            margin-top: 50px; 
+            padding-top: 40px; 
+            border-top: 1px solid #334155; 
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .social-link { 
+            color: #94a3b8; 
+            font-weight: bold; 
+            font-size: 1.1rem; 
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: #1e293b;
+        }
+        .social-link:hover { color: var(--accent); background: #334155; transform: translateY(-2px); }
+
+        footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.85rem; border-top: 1px solid #1e293b; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            nav { flex-direction: column; gap: 15px; padding: 1rem; }
+            .links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .links a { margin-left: 0; }
+            h1 { font-size: 2.2rem; margin-top: 30px; }
+            .btn { width: 100%; }
+            .social-section { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">T.F.A.</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <span class="current">Contact</span>
+        </nav>
+
+        <h1>Let's Work Together</h1>
+        <p>I am currently available for projects that require Web Development, Automation logic, or Secure Frontend Architecture. If you have a project that needs a skilled developer, I'd love to hear from you.</p>
+        
+        <a href="mailto:akintoyetoluwani@gmail.com" class="btn">Send Me an Email</a>
+
+        <div class="social-section">
+            <a href="https://www.linkedin.com/in/toluwani-akintoye-89215431b" target="_blank" class="social-link">
+                LinkedIn &nearr;
+            </a>
+            
+            <a href="https://github.com/Toda24" target="_blank" class="social-link">
+                GitHub &nearr;
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Toluwani Fortune Akintoye. All rights reserved.</p>
+    </footer>
+</body>
+</html>

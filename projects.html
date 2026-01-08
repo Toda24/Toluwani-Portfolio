@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Toluwani Akintoye</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+    <style>
+        :root { 
+            --bg: #0B1120; 
+            --text: #cbd5e1; 
+            --accent: #38bdf8; 
+            --card: #1e293b; 
+            --nav-bg: rgba(30, 41, 59, 0.8);
+            --font-main: 'Inter', sans-serif; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; font-family: var(--font-main); }
+        
+        nav { 
+            background: var(--nav-bg); 
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 2rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #1e293b;
+        }
+        .logo { font-weight: 800; color: var(--accent); font-size: 1.3rem; }
+        .links a { margin-left: 20px; color: inherit; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .links a:hover, .links a.active { color: var(--accent); }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; flex: 1; }
+        
+        .breadcrumbs { padding: 30px 0; font-size: 0.9rem; color: #94a3b8; }
+        .breadcrumbs a { color: var(--accent); text-decoration: none; }
+        .breadcrumbs .separator { margin: 0 10px; color: #64748b; }
+        .breadcrumbs .current { color: #cbd5e1; opacity: 0.7; }
+
+        h1 { color: #fff; margin-bottom: 40px; text-align: center; margin-top: 10px; font-size: 2.5rem; }
+        
+        .project-card { 
+            background: var(--card); 
+            border-radius: 12px; 
+            padding: 35px; 
+            margin-bottom: 30px; 
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Glowing effect on hover */
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            border-color: var(--accent); 
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
+        }
+        
+        .project-title { font-size: 1.6rem; color: #fff; margin-bottom: 10px; font-weight: 700; }
+        .project-preview { color: #94a3b8; margin-bottom: 20px; line-height: 1.6; }
+        
+        .tags { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .tag { font-size: 0.75rem; background: rgba(56, 189, 248, 0.1); color: var(--accent); padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(56, 189, 248, 0.2); }
+
+        .cta-link { 
+            color: var(--accent); 
+            font-weight: bold; 
+            text-decoration: none; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 5px;
+            margin-top: 10px; 
+            transition: 0.3s;
+        }
+        .cta-link:hover { gap: 10px; color: #fff; }
+
+        footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.85rem; border-top: 1px solid #1e293b; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            nav { flex-direction: column; gap: 15px; padding: 1rem; }
+            .links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .links a { margin-left: 0; }
+            .project-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">T.F.A.</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <span class="current">Projects</span>
+        </nav>
+
+        <h1>Recent Work</h1>
+
+        <div class="project-card">
+            <div class="project-title">Caroline's Foods & Beverages</div>
+            <div class="tags">
+                <span class="tag">E-Commerce</span>
+                <span class="tag">JavaScript Logic</span>
+                <span class="tag">n8n Automation</span>
+            </div>
+            <p class="project-preview">A dynamic retail platform featuring <strong>Seasonal Pricing Logic</strong> (auto-adjusts ice prices based on month), <strong>LGA Delivery Locking</strong>, and automated order processing via webhooks.</p>
+            <a href="project-caroline.html" class="cta-link">View Case Study &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Purple Love Charity Initiative</div>
+            <div class="tags">
+                <span class="tag">Fintech Integration</span>
+                <span class="tag">Frontend Architecture</span>
+                <span class="tag">Automation</span>
+            </div>
+            <p class="project-preview">A seamless donation portal handling multi-currency support. Features "Direct-Action" payment logic and an automated backend workflow to track donor activity.</p>
+            <a href="project-purple.html" class="cta-link">View Case Study &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Tabithabams Naturals</div>
+            <div class="tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Motion Graphics</span>
+            </div>
+            <p class="project-preview">Digital brand identity and motion graphics created for a natural hair care product line to enhance social media engagement.</p>
+            <a href="#" class="cta-link" style="opacity: 0.6; cursor: not-allowed;">Coming Soon &rarr;</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Toluwani Fortune Akintoye. All rights reserved.</p>
+    </footer>
+</body>
+</html>
