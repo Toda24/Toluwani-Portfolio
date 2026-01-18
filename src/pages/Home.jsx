@@ -71,7 +71,7 @@ const Home = () => {
             to="/projects" 
             className="group relative px-8 py-4 bg-white text-black font-bold text-sm tracking-wider hover:bg-slate-200 transition-all duration-300"
           >
-            VIEW SELECTED WORKS
+            EXPLORE SYSTEMS
           </Link>
 
           <Link 
