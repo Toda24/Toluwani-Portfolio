@@ -1,98 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toluwani Akintoye | Web & Automation</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <style>
-        :root { 
-            --bg: #0B1120; 
-            --text: #cbd5e1; 
-            --accent: #38bdf8; 
-            --accent-glow: #0ea5e9;
-            --nav-bg: rgba(30, 41, 59, 0.8); 
-            --font-main: 'Inter', system-ui, sans-serif; 
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: var(--bg); color: var(--text); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; font-family: var(--font-main); }
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        
-        nav { 
-            background: var(--nav-bg); 
-            backdrop-filter: blur(10px);
-            padding: 1.2rem 2rem; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid #1e293b;
-        }
-        .logo { font-weight: 800; color: var(--accent); font-size: 1.3rem; letter-spacing: 1px; }
-        .links a { margin-left: 25px; font-size: 0.95rem; font-weight: 500; }
-        .links a:hover, .links a.active { color: var(--accent); text-shadow: 0 0 10px rgba(56, 189, 248, 0.4); }
-
-        .hero { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
-        
-        h1 { 
-            font-size: 3.5rem; 
-            color: #fff; 
-            margin-bottom: 1rem; 
-            line-height: 1.1; 
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .role { font-size: 1.1rem; color: #94a3b8; margin-bottom: 2rem; }
-        
-        .btn { 
-            padding: 12px 30px; 
-            border: 1px solid var(--accent); 
-            color: var(--accent); 
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        .btn:hover { 
-            background: var(--accent); 
-            color: #0B1120; 
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
-        }
-
-        footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.85rem; border-top: 1px solid #1e293b; margin-top: auto; }
-
-        @media (max-width: 768px) {
-            nav { flex-direction: column; gap: 15px; padding: 1rem; }
-            .links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
-            .links a { margin-left: 0; }
-            h1 { font-size: 2.5rem; }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="logo">T.F.A.</div>
-        <div class="links">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-
-    <div class="hero">
-        <p style="color: var(--accent); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 10px;">Hi, I'm Toluwani Fortune Akintoye</p>
-        <h1>Building Smart <br> Web Solutions.</h1>
-        <p class="role">Frontend Developer | Automation Specialist | Cybersecurity Enthusiast</p>
-        <a href="projects.html" class="btn">View My Work</a>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Toluwani Fortune Akintoye. All rights reserved.</p>
-    </footer>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Toluwani Akintoye | Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
