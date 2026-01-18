@@ -4,7 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 
 const skills = [
   "React JS & Native", "n8n Automation", "FlutterFlow", 
-  "Node.js Logic", "Supabase / SQL", "Cybersecurity (Sec+)", 
+  "Node.js Logic", "Supabase / SQL", 
   "Python", "REST APIs"
 ];
 

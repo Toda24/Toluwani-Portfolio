@@ -30,8 +30,8 @@ const Projects = () => {
         animate={{ opacity: 1, y: 0 }}
         className="mb-12 border-b border-slate-800 pb-4"
       >
-        <h1 className="text-4xl text-white font-bold">Selected Works</h1>
-        <p className="text-slate-400 mt-2">A showcase of technical precision and creative problem solving.</p>
+        <h1 className="text-4xl text-white font-bold">Engineered Solutions</h1>
+        <p className="text-slate-400 mt-2">High-performance systems built with Code and Automation.</p>
       </motion.div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
