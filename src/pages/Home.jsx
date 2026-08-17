@@ -48,14 +48,16 @@ const Home = () => {
 
         {/* 4. THE ROLES (Professional Static Fade-In) */}
         <motion.div 
-          className="flex flex-wrap justify-center gap-4 text-slate-400 text-lg md:text-xl mb-12 font-light"
+          className="flex flex-wrap justify-center items-center gap-3 text-slate-400 text-base md:text-xl mb-12 font-light"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <span>Software Engineer</span>
           <span className="text-slate-700">•</span>
-          <span>Full Stack Developer</span>
+          <span>ML & Deep Learning Systems</span>
+          <span className="text-slate-700">•</span>
+          <span>Backend & Database Architecture</span>
           <span className="text-slate-700">•</span>
           <span className="text-[#38bdf8]">n8n Automation Specialist</span>
         </motion.div>

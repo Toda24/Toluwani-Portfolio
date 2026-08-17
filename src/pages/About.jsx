@@ -3,14 +3,15 @@ import { motion } from 'framer-motion';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const skills = [
-  "React JS & Native", "n8n Automation", "FlutterFlow", 
-  "Node.js Logic", "Supabase / SQL", 
-  "Python", "REST APIs"
+  "Python (PyTorch / TF)", "Advanced SQL & Relational DBs", 
+  "CNNs & Vision Transformers", "Statistical Data Modeling",
+  "React JS & Native", "n8n Workflow Automation",
+  "REST APIs & Node.js", "AWS Cloud Infrastructure"
 ];
 
 const About = () => {
   return (
-    <div className="min-h-screen pt-24 px-6 md:px-12 max-w-4xl mx-auto">
+    <div className="min-h-screen pt-24 px-6 md:px-12 max-w-4xl mx-auto pb-16">
       <Breadcrumbs />
       
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
@@ -18,10 +19,13 @@ const About = () => {
         
         <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
           <p>
-            I am a Computer Science graduate from Mountain Top University (2:1) focused on one thing: <strong className="text-white">building systems that work efficiently.</strong>
+            I am a Computer Science graduate from Mountain Top University (2:1, CGPA 4.26/5.00) focused on <strong className="text-white">engineering intelligent, scalable, and automated digital systems.</strong>
           </p>
           <p>
-            While I am proficient in writing custom code with React and Node.js, I believe modern engineering is about Architecture, not just Syntax. I combine the precision of custom coding with the velocity of workflow automation (n8n, FlutterFlow) to deliver enterprise-grade applications in days, not months.
+            My engineering work spans end-to-end software development: architecting deep learning pipelines (CNN-Transformers for Computer Vision), implementing statistical models, designing robust SQL database schemas, and building enterprise automation workflows with n8n.
+          </p>
+          <p>
+            Whether developing high-performance web platforms or designing resilient cloud and data architectures, I combine custom engineering with workflow velocity to deliver production-ready systems.
           </p>
         </div>
 
@@ -42,7 +46,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-[#1e293b] p-3 text-center rounded-lg border border-transparent hover:border-[#38bdf8] hover:text-white transition-all cursor-default text-sm text-slate-300"
+                className="bg-[#1e293b] p-3 text-center rounded-lg border border-transparent hover:border-[#38bdf8] hover:text-white transition-all cursor-default text-sm text-slate-300 font-medium"
               >
                 {skill}
               </motion.div>
