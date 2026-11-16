@@ -10,6 +10,7 @@ const Projects = React.lazy(() => import('./pages/Projects'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const ProjectCaroline = React.lazy(() => import('./pages/ProjectCaroline'));
 const ProjectPurple = React.lazy(() => import('./pages/ProjectPurple'));
+const ProjectChicJune = React.lazy(() => import('./pages/ProjectChicJune'));
 
 // Loading Spinner
 const Loading = () => (
@@ -25,7 +26,6 @@ const App = () => {
       <div className="relative min-h-screen bg-[#0B1120] text-slate-300 overflow-hidden font-sans">
         
         {/* --- GLOBAL CYBER GRID BACKGROUND --- */}
-        {/* This creates the tech-grid pattern everywhere */}
         <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
              style={{
                backgroundImage: 'linear-gradient(#38bdf8 1px, transparent 1px), linear-gradient(90deg, #38bdf8 1px, transparent 1px)',
@@ -34,11 +34,9 @@ const App = () => {
         </div>
         
         {/* --- GLOBAL RADIAL GLOW --- */}
-        {/* This fades the grid into darkness at the edges */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-[#0B1120]/80 to-[#0B1120] pointer-events-none"></div>
 
         {/* --- CONTENT LAYER --- */}
-        {/* z-10 ensures text sits ON TOP of the grid */}
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
           
@@ -51,6 +49,7 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
                 
                 {/* Case Studies */}
+                <Route path="/projects/chicjune" element={<ProjectChicJune />} />
                 <Route path="/projects/caroline" element={<ProjectCaroline />} />
                 <Route path="/projects/purple" element={<ProjectPurple />} />
               </Routes>

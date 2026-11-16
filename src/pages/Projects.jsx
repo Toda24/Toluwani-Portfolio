@@ -29,6 +29,14 @@ const projects = [
     link: "#"
   },
   {
+    title: "Chic June Luxury E-Commerce Platform",
+    category: "Fullstack E-Commerce & Cloud Automation",
+    description: "Production luxury jewelry storefront featuring OTP-gated user authentication, Paystack inline checkout, dynamic Lagos/interstate shipping rates, and 24/7 Railway-hosted n8n workflows synced with Google Sheets.",
+    tech: ["JavaScript", "n8n (Railway)", "Paystack API", "Google Sheets DB"],
+    isExternal: true,
+    link: "/projects/chicjune"
+  },
+  {
     title: "Caroline's Foods & Beverages",
     category: "Fullstack Automation",
     description: "A complete digital commerce system. Engineered the frontend in React and automated the backend order processing and inventory logic using custom n8n workflows.",
